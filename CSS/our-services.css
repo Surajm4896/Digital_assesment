@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700;800&display=swap');
+body {
+    margin: 0;
+    font-family: Plus Jakarta Sans;
+}
+
+.container {
+    font-family: Plus Jakarta Sans;
+}
+
+.container h2 {
+    font-size: 52px;
+}
+
+/* Titile */
+@media only screen and (max-device-width: 1000px) {
+.container h2{
+        font-size: 24px;
+    }
+}
+@media only screen and (max-device-width: 1000px){
+    .our-service{
+                min-width: 64%;
+    }
+}
+    .our-service{
+        width: 44%;
+    }
+
+.service-our {
+    width: 100%;
+    max-width: 90% !important;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.service-our h3 {
+    color: #171921;
+}
+
+/* Cards */
+@media only screen and (max-device-width: 1000px) {
+    .cards-resp {
+        text-align: center;
+        justify-content: center;
+        display: flex;
+    }
+
+   .cards-resp img{
+        justify-content: center;
+        display: flex;
+    }
+
+}
+
+.more-services {
+    max-width: 360px;
+    max-height: 252px;
+    border-radius: 24px;
+    gap: 32px;
+    border-radius: 24px;
+    padding: 32px;
+    background: #15B2F5;
+    color: white;
+}
+
+.more-services button {
+    width: 100%;
+    max-height: 64px;
+    border-radius: 60px;
+    padding: 8px;
+    right: 0;
+
+}

@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <link rel="stylesheet" href="CSS/our-services.css">
+    <link rel="stylesheet" href="CSS/hero.css">
+    <link rel="stylesheet" href="CSS/slider.css">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/footer.css">
+    
+</head>
+
+<body>
+    <!-- Navbar -->
+    <div class="banner-hero text-white bg-dark-blue">
+        <nav id="navbar"
+            class="navbar flex justify-between items-center p-6 px-4 md:px-40 font-bold mx-[160px] my-[24px] md:my-[28px]" style="margin: 20px;">
+            <div class="text-xl font-bold flex items-center">
+                <span class="text-blue-400 text-2xl">
+                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M14.0798 7.75008C15.2221 6.91013 16.7778 6.91013 17.9201 7.75008L24.808 12.8147C25.6387 13.4255 26.1292 14.3951 26.1292 15.4262V25.758H19.6465V17.0661L15.9999 14.3848L12.3534 17.0661V25.758H5.87061V15.4262C5.87061 14.3951 6.36114 13.4255 7.19182 12.8147L14.0798 7.75008Z"
+                            fill="#15B2F5" />
+                        <rect x="12.395" y="25.7578" width="7.24329" height="5.24219" fill="white" />
+                    </svg>
+                </span>
+                <span class="ml-2 ">HomePro</span>
+            </div>
+            <ul id="nav-menu" class="hidden md:flex space-x-6 font-bold nav-menu">
+                <li><a href="#" class="hover:text-blue-400 font-bold text-lg">About Us</a></li>
+                <li><a href="#" class="hover:text-blue-400 font-bold text-lg">Services</a></li>
+                <li><a href="#" class="hover:text-blue-400 font-bold text-lg">Our Blog</a></li>
+                <li><a href="#" class="hover:text-blue-400 font-bold text-lg">Contact</a></li>
+            </ul>
+            <button id="hamburger-btn" class="hamburger-btn md:hidden"><img src="./img/menu.png"></button>
+            <button id="hamburger-close" class="hamburger-close hidden"><img src="./img/IC_x.png"></button>
+            <div class="text-sm text-white-700 hidden md:block text-lg">
+                <span class="red_circle inline-block">
+                    <img src="./img/Shape.png" alt="red-circle" />
+                </span> 24 Hour Services
+            </div>
+        </nav>
+        <!-- Hero Section -->
+        <section class="hero-section text-center md:px-10 md:py-5">
+            <div class="flex flex-col md:flex-row">
+                <div class="w-full lg:w-1/4 mb-6 lg:mb-0 flex justify-start hidden lg:block">
+                    <img src="./img/Img1.png" alt="Worker fixing door" class="rounded-lg custom-image">
+                </div>
+                <div class="w-full lg:w-2/4 text-center relative hero-secv">
+                    <div class="hero-content-wrapper">
+                        <p class="text-gray-400 mb-2"><span class="mx-2">Maintenances</span> •<span
+                                class="mx-2">Repairs</span> • <span class="mx-2">Improvements</span></p>
+                        <h2 class="heading-h2">Need improvement or repair your home? We can help!</h2>
+    
+                        <div class="flex justify-center space-x-3 mt-4">
+                            <span class="sky-blue-color"><img class="inline-block" src="./img/Ic_24-Check.png" /> Free
+                                Quotes</span>
+                            <span class="sky-blue-color"><img class="inline-block" src="./img/Ic_24-Check.png" /> 100%
+                                Commitment-Free</span>
+                        </div>
+                        <button
+                            class="mt-6 px-4 py-2 btn-clr btn-call-us text-white rounded-full flex items-center mx-auto gap-4 call-us-btn">
+                            Call Us Now <span class="relative left-13"><img src="./img/Icon + Container.png"
+                                    alt="Call Us" /></span>
+                        </button>
+                    </div>
+                    <!-- Features Section -->
+                    <div
+                        class="flex flex-wrap justify-center mt-8 pt-6 pb-6 px-10 text-center bottom-5 feature-section lg:absolute">
+                        <div
+                            class="feature-item text-gray-300 w-full sm:w-1/2 lg:w-1/4 flex items-center gap-3 px-4 text-left">
+                            <span class="feature-icon feat-icon"><img src="./img/Ic_24-Guarantee.png"
+                                    alt="Satisfaction Guarantee" /></span> Satisfaction Guarantee
+                        </div>
+                        <div
+                            class="feature-item text-gray-300 w-full sm:w-1/2 lg:w-1/4 flex items-center gap-3 px-4 text-left">
+                            <span class="feature-icon feat-icon"><img src="./img/Ic_24-Clock.png"
+                                    alt="24H Availability" /></span>
+                            24H Availability
+                        </div>
+                        <div
+                            class="feature-item text-gray-300 w-full sm:w-1/2 lg:w-1/4 flex items-center gap-3 px-4 text-left">
+                            <span class="feature-icon feat-icon"><img src="./img/Ic_24-Map-pin.png"
+                                    alt="Local US Professional" /></span> Local US Professional
+                        </div>
+                        <div
+                            class="feature-item text-gray-300 w-full sm:w-1/2 lg:w-1/4 flex items-center gap-3 px-4 text-left">
+                            <span class="feature-icon feat-icon"><img src="./img/Ic_24-Calendar.png"
+                                    alt="24H Availability" /></span>
+                            Flexible Appointment
+                        </div>
+                    </div>
+                </div>
+                <div class="w-full lg:w-1/4 lg-6 md:mb-0 flex justify-end hidden lg:block">
+                    <img src="./img/Img2.png" alt="Worker fixing toilet" class="rounded-lg custom-image">
+                </div>
+            </div>
+            <img src="./img/Decoration-left.png" alt="decoration" class="decoration left-side" />
+            <img src="./img/Decoration.png" alt="decoration" class="decoration right-side" />
+    </div>
+    </section>
+                    <!-- Our Service -->
+        <div>
+            <div class="container mx-auto py-12 px-4 ">
+                <h2 class="text-3xl font-bold text-center media-service text-gray-800 mb-4">Our Services</h2>
+                <p class="text-center text-gray-600 mb-12 mx-auto our-service text-base sm:text-lg md:text-xl lg:w-2/3">
+                    You have problems with leaking pipes, broken tiles, lost keys or want to tidy up the trees around you, you need
+                    our
+                    help!
+                </p>
+            
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 service-our">
+                    <div class="cards-resp">
+                        <div class="bg-white rounded-lg p-6 ">
+                            <div class="text-5xl text-blue-500 cards-resp mb-4">
+                                <img src="/img/Our-service/Plumbing services.png" alt="">
+                            </div>
+                            <h3 class="text-xl font-semibold mb-2">Plumbing Services</h3>
+                            <p class="text-gray-600">Drain pipe leaks, clogged pipes, and pipeline replacements</p>
+                        </div>
+                    </div>
+                    <div class="cards-resp">
+                        <div class="bg-white rounded-lg p-6 ">
+                            <div class="text-5xl text-blue-500 cards-resp mb-4">
+                                <img src="img/Our-service/Roofing repair.png" alt="">
+                            </div>
+                            <h3 class="text-xl font-semibold mb-2">Roofing Repair</h3>
+                            <p class="text-gray-600">Roof leaks, tile replacement, roof cleaning and maintenance</p>
+                        </div>
+                    </div>
+            
+                    <div class="cards-resp">
+                        <div class="bg-white rounded-lg p-6">
+                            <div class="text-5xl text-blue-500 cards-resp mb-4">
+                                <img src="img/Our-service/Mold Removal.png" alt="">
+                            </div>
+                            <h3 class="text-xl font-semibold mb-2">Mold Removal</h3>
+                            <p class="text-gray-600">Removing and cleaning mildew, Restoration and Prevention</p>
+                        </div>
+                    </div>
+            
+                    <div class="cards-resp">
+                        <div class="bg-white rounded-lg p-6 ">
+                            <div class="text-5xl text-blue-500 cards-resp mb-4">
+                                <img src="img/Our-service/Tree Trimming.png" alt="">
+                            </div>
+                            <h3 class="text-xl font-semibold mb-2">Tree Trimming</h3>
+                            <p class="text-gray-600">Trimming and cleaning, Deadwood removal, Tree shaping</p>
+                        </div>
+                    </div>
+            
+                    <div class="cards-resp">
+                        <div class="bg-white rounded-lg p-6">
+                            <div class="text-5xl text-blue-500 cards-resp mb-4">
+                                <img src="img/Our-service/Appliance Repair.png" alt="">
+                            </div>
+                            <h3 class="text-xl font-semibold mb-2">Appliance Repair</h3>
+                            <p class="text-gray-600">repair of washing machines, refrigerators, Air conditioner, etc</p>
+                        </div>
+                    </div>
+            
+                    <div class="cards-resp">
+                        <div class="bg-white rounded-lg p-6">
+                            <div class="text-5xl text-blue-500 cards-resp mb-4">
+                                <img src="img/Our-service/Bathroom Remodeling.png" alt="">
+                            </div>
+                            <h3 class="text-xl font-semibold mb-2">Bathroom Remodeling</h3>
+                            <p class="text-gray-600">Design and Consulting, installation, Repairing, tile repair</p>
+                        </div>
+                    </div>
+            
+                    <div class="cards-resp">
+                        <div class="bg-white rounded-lg p-6">
+                            <div class="text-5xl text-blue-500 cards-resp mb-4">
+                                <img src="img/Our-service/Locksmith.png" alt="">
+                            </div>
+                            <h3 class="text-xl font-semibold mb-2">Locksmith Services</h3>
+                            <p class="text-gray-600">Lock Installation and Repair, Duplication, Lock Rekeying</p>
+                        </div>
+                    </div>
+            
+                    <div class="cards-resp">
+                        <div class="p-6 rounded-lg text-center more-services">
+                            <div class="text-5xl mb-4"> </div>
+                            <h3 class="text-xl text-white font-semibold mb-2" style="color: white;">More Services?</h3>
+                            <p class="mb-4">You can tell us what you need and we can help!</p>
+                            <button
+                                class="bg-white hover:bg-gray-200 font-bold py-2 px-4 rounded-full text-2xl font-bold" style="color: #15B2F5;">
+                                Call Us Now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+            <!-- Slider -->
+    <section>
+        <div class="flex items-center justify-center min-h-screen">
+            <div class="review-container mb-auto">
+                <h2 class="text-[46px] font-bold text-gray-800 text-center">
+                    Here are our original reviews <br> from a trusted platform
+                </h2>
+                <br>
+                <div class="mt-6">
+                    <img src="img/Logo.png" alt="Trustpilot" class="h-15 mx-auto review-logo">
+                </div>
+
+                <!-- Review Slides -->
+                <div class="mt-8">
+                    <div class="review-slide active review-ht">
+                        <div class="mt-4 review-desc text-gray-600 text-left max-w-lg mx-auto text-lg">
+                            Roof repairs can be a real headache, but HomePro makes it easy! Their roofing team turned my
+                            leaky roof into a stockade.
+                            With their craftsmanship and the best materials, my house is now ready to weather any storm.
+                        </div>
+                        <div class="mt-8 flex items-center justify-center">
+                            <img src="img/review.png" alt="Kende Attila" class="w-[76px] h-[76px] rounded-full">
+                            <div class="ml-3 text-left">
+                                <p class="font-semibold text-gray-800 text-[24px] text-[24px]">Kende Attila</p>
+                                <div class="flex">
+                                    <img src="img/Ic_24-Star.png" alt="Star" class="w-6 h-6">
+                                    <img src="img/Ic_24-Star.png" alt="Star" class="w-6 h-6">
+                                    <img src="img/Ic_24-Star.png" alt="Star" class="w-6 h-6">
+                                    <img src="img/Ic_24-Star.png" alt="Star" class="w-6 h-6">
+                                    <img src="img/incomplete-Star.png" alt="Star" class="w-6 h-6">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="review-slide active review-ht">
+                        <div class="mt-4 review-desc text-gray-600 text-left max-w-lg mx-auto text-lg">
+                            Roof repairs can be a real headache, but HomePro makes it easy! Their roofing team turned my
+                            leaky roof into a
+                            stockade.
+                            With their craftsmanship and the best materials, my house is now ready to weather any storm.
+                        </div>
+                        <div class="mt-8 flex items-center justify-center">
+                            <img src="img/review.png" alt="Kende Attila" class="w-[76px] h-[76px] rounded-full">
+                            <div class="ml-3 text-left">
+                                <p class="font-semibold text-gray-800 text-[24px] text-[24px]">Kende Attila</p>
+                                <div class="flex">
+                                    <img src="img/Ic_24-Star.png" alt="Star" class="w-6 h-6">
+                                    <img src="img/Ic_24-Star.png" alt="Star" class="w-6 h-6">
+                                    <img src="img/Ic_24-Star.png" alt="Star" class="w-6 h-6">
+                                    <img src="img/Ic_24-Star.png" alt="Star" class="w-6 h-6">
+                                    <img src="img/incomplete-Star.png" alt="Star" class="w-6 h-6">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="review-slide active review-ht">
+                        <div class="mt-4 review-desc text-gray-600 text-left max-w-lg mx-auto text-lg">
+                            Roof repairs can be a real headache, but HomePro makes it easy! Their roofing team turned my
+                            leaky roof into a
+
+                        </div>
+                        <div class="mt-8 flex items-center justify-center">
+                            <img src="img/review.png" alt="Kende Attila" class="w-[76px] h-[76px] rounded-full">
+                            <div class="ml-3 text-left">
+                                <p class="font-semibold text-gray-800 text-[24px] text-[24px]">Kende Attila</p>
+                                <div class="flex">
+                                    <img src="img/Ic_24-Star.png" alt="Star" class="w-6 h-6">
+                                    <img src="img/Ic_24-Star.png" alt="Star" class="w-6 h-6">
+                                    <img src="img/Ic_24-Star.png" alt="Star" class="w-6 h-6">
+                                    <img src="img/Ic_24-Star.png" alt="Star" class="w-6 h-6">
+                                    <img src="img/incomplete-Star.png" alt="Star" class="w-6 h-6">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="review-slide active review-ht">
+                        <div class="mt-4 review-desc text-gray-600 text-left max-w-lg mx-auto text-lg">
+                            Roof repairs can be a real headache, but HomePro makes it easy! Their roofing team turned my
+                            leaky roof into a
+                            stockade.
+                            With their craftsmanship and the best materials, my house is now ready to weather any storm.
+                        </div>
+                        <div class="mt-8 flex items-center justify-center">
+                            <img src="img/review.png" alt="Kende Attila" class="w-[76px] h-[76px] rounded-full">
+                            <div class="ml-3 text-left">
+                                <p class="font-semibold text-gray-800 text-[24px] text-[24px]">Kende Attila</p>
+                                <div class="flex">
+                                    <img src="img/Ic_24-Star.png" alt="Star" class="w-6 h-6">
+                                    <img src="img/Ic_24-Star.png" alt="Star" class="w-6 h-6">
+                                    <img src="img/Ic_24-Star.png" alt="Star" class="w-6 h-6">
+                                    <img src="img/Ic_24-Star.png" alt="Star" class="w-6 h-6">
+                                    <img src="img/incomplete-Star.png" alt="Star" class="w-6 h-6">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Navigation: Buttons on sides, dots in center -->
+                <div class="navigation-container">
+                    <button class="arrow-button prev-button">
+                        <i class="fas fa-arrow-left"></i>
+                    </button>
+
+                    <div class="flex space-x-2 justify-center">
+                        <span class="dot w-3 h-3 rounded-full active"></span>
+                        <span class="dot w-3 h-3 rounded-full inactive"></span>
+                        <span class="dot w-3 h-3 rounded-full inactive"></span>
+                        <span class="dot w-3 h-3 rounded-full inactive"></span>
+                    </div>
+
+                    <button class="arrow-button next-button">
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Newsletter -->
+<section class="footer-hero-banner bg-[#142257] text-white ">
+    <div class="  mx-auto  flex flex-col md:flex-row items-center justify-between">
+        <div class="md:w-2/3 text-center md:text-left justify-center footer-sec-banner ">
+            <img src="img/Shape (1).png" alt="Top-image" class="mx-auto mb-12">
+            <h2 class=" leading-tight mb-12">Already to improve or repair your home? Let’s Talk!</h2>
+            <div class="mt-4 p-4 flex  md:flex-row md:space-x-4 justify-center">
+                <span class="flex items-center space-x-2">
+                    <img src="./img/Ic_24-Check.png" alt="right-image" class="w-5">
+                    <span style="color: #15B2F5;
+    ">Free Quotes</span>
+                </span>
+                <span class="flex items-center space-x-2 mt-2 md:mt-0">
+                    <img src="./img/Ic_24-Check.png" alt="right-image" class="w-5">
+                    <span style="color: #15B2F5;
+    ">100% Commitment-Free</span>
+                </span>
+            </div>
+
+            <button
+                class="mt-6 mb-8 px-4 py-2 btn-clr btn-call-us text-white rounded-full flex items-center mx-auto gap-4 call-us-btn">
+                Call Us Now <span class="relative left-13"><img src="./img/Icon + Container.png" alt="Call Us" /></span>
+            </button>
+        </div>
+        <div class="image-section">
+            <img src="img/Image.png" alt="footer image" class="desktop-image pt-6" />
+        </div>
+    </div>
+</section>
+
+
+<div>
+    <footer class=" text-white p-6 md:p-10 footer-blue">
+        <div class="max-w-6xl mx-auto">
+            <!-- Newsletter Section -->
+            <div
+                class=" p-4 newsletter-search md:p-6 rounded-lg flex flex-col md:flex-row items-center justify-between footer-search">
+                <div class="mb-4 md:mb-0 text-center md:text-left">
+                    <h5 class="text-lg">
+                        Stay Connected with Our Newsletter
+                    </h5>
+                    <p class="text-sm">
+                        Subscribe to our newsletter to get more news, promo, or news
+                        services
+                    </p>
+                </div>
+                <div class="flex items-center bg-white rounded-full shadow-lg p-1  md:w-96 border border-gray-200">
+                    <input type="email" placeholder="Enter email address"
+                        class="flex-1 bg-transparent px-4 py-3 text-gray-500 outline-none rounded-full" />
+                    <button class="btn-clr text-white px-6 py-3 font-semibold rounded-full shadow-md">
+                        Subscribe
+                    </button>
+                </div>
+            </div>
+
+            <!-- Footer Content -->
+            <div class="mt-10 text-center md:text-left">
+                <div class="flex flex-col md:flex-row justify-between items-center">
+                    <div class="mb-5 md:mb-0">
+                        <div class="social-media text-xl font-bold flex items-center">
+                            <span class="text-blue-400 text-2xl">
+                                <img src="img/Mark.png" alt="">
+                            </span>
+                            <span class="ml-2 ">HomePro</span>
+                        </div>
+                        <div class="social-sec">
+                            <p class="text-sm mt-2">Home Pro is your premier destination for top-notch smart home
+                                service and
+                                repair.</p>
+                            <div class="social-media flex space-x-4 mt-3 gap-5 mt-8">
+                                <a href="#"><img src="img/social/youtube.png" alt="YouTube" class="w-6"></a>
+                                <a href="#"><img src="img/social/instagram.png" alt="Instagram" class="w-6"></a>
+                                <a href="#"><img src="img/social/facebook.png" alt="Facebook" class="w-6"></a>
+                                <a href="#"><img src="img/social/twitter.png" alt="Twitter" class="w-6"></a>
+                                <a href="#"><img src="img/social/mail.png" alt="Email" class="w-6"></a>
+                            </div>
+                        </div>
+
+                        <!-- <div class="flex space-x-4 mt-3">
+                            <a href="#" class="text-white text-lg"><i class="fab fa-youtube"></i></a>
+                            <a href="#" class="text-white text-lg"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="text-white text-lg"><i class="fab fa-facebook"></i></a>
+                            <a href="#" class="text-white text-lg"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="text-white text-lg"><i class="fas fa-envelope"></i></a>
+                        </div> -->
+                    </div>
+
+                    <div class="flex justify-between space-x-10 footer-menu">
+                        <div>
+                            <h5 class=" mb-6">Company</h5>
+                            <ul class="mt-2 space-y-1 text-sm">
+                                <li><a href="#" class="hover:underline">About us</a></li>
+                                <li><a href="#" class="hover:underline">Services</a></li>
+                                <li><a href="#" class="hover:underline">Our Blog</a></li>
+                                <li><a href="#" class="hover:underline">Contact</a></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h5 class=" mb-6">Legal</h5>
+                            <ul class="mt-2 space-y-1 text-sm">
+                                <li><a href="#" class="hover:underline">Terms</a></li>
+                                <li><a href="#" class="hover:underline">Privacy</a></li>
+                                <li><a href="#" class="hover:underline">Cookies</a></li>
+                                <li><a href="#" class="hover:underline">License</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Copyright Section -->
+            <div class="text-center text-sm mt-10 border-t border-blue-400 pt-4">
+                &copy; 2023 HomePro. All rights reserved
+            </div>
+        </div>
+    </footer>
+</div>
+
+
+    <script src="ham_burger.js"></script>
+    <script src="slider.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+</body>
+
+</html>

@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700;800&display=swap');
+body {
+    font-family: Plus Jakarta Sans;
+}
+
+.review-slide {
+    display: none;
+}
+
+.review-slide.active {
+    display: block;
+}
+
+.dot.active {
+    background-color: #3b82f6;
+}
+
+.dot.inactive {
+    background-color: #e5e7eb;
+}
+
+.arrow-button {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #e5e7eb;
+    transition: background-color 0.3s ease;
+    font-size: 24px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.arrow-button:hover {
+    background-color: #3b82f6;
+    color: white;
+}
+
+.review-container {
+    width: 70%;
+    max-width: 1200px;
+    padding: 5rem;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 8px;
+    position: relative;
+}
+
+.review-container h2 {
+    font-size: 52px;
+    font-weight: 700;
+}
+
+.review-slide .mt-4 {
+    margin-top: 0.6rem;
+}
+
+.review-text {
+    font-size: 1.25rem;
+    margin-left: 8px;
+}
+
+.review-ht {
+    min-height: 332px;
+}
+
+.review-desc {
+    max-width: 570px !important;
+    text-align: center !important;
+}
+ .review-logo{
+    width: 206px;
+    height: 56px;
+ }
+
+/* Mobile Screen */
+@media (max-width: 1000px) {
+    .review-container {
+        width: 90%;
+        padding: 2rem;
+
+        h2 {
+            font-size: 24px;
+        }
+
+        .review-logo {
+            max-width: 133px;
+            max-height: 36px;
+        }
+    }
+
+    .arrow-button {
+        width: 40px;
+        height: 40px;
+        font-size: 18px;
+    }
+
+    .review-text {
+        font-size: 1rem;
+        margin-left: 4px;
+    }
+
+    .review-slide {
+        padding: 0.5rem;
+    }
+
+    /* Button positioning for mobile */
+    .navigation-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 1rem;
+        padding: 0 1rem;
+        position: relative;
+    }
+
+    .dot {
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+    }
+
+    .dot.active {
+        background-color: #3b82f6;
+    }
+
+    .dot.inactive {
+        background-color: #e5e7eb;
+    }
+}
+
+@media (max-width: 480px) {
+    .arrow-button {
+        width: 35px;
+        height: 35px;
+        font-size: 16px;
+    }
+
+    .dot {
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+}

@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700;800&display=swap');
+
+body {
+    margin: 0;
+    font-family: Plus Jakarta Sans;
+}
+
+.footer-hero {
+    background-color: #142257;
+    display: flex;
+
+}
+
+.footer-hero h2 {
+    font-size: 64px;
+}
+
+.footer-hero img {
+    width: 100%;
+}
+
+.footer-blue {
+    background-color: #15B2F5;
+}
+
+.footer-search {
+    background: #4AC9FF;
+}
+
+.footer-company {
+    text-align: end;
+}
+
+.btn-clr {
+    background: #15B2F5;
+}
+
+.footer-menu {
+    gap: 20px;
+
+}
+
+.footer-menu ul {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+}
+
+.footer-menu h5 {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+    font-family: plus jakarta sans;
+}
+
+.newsletter-search h5 {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+}
+
+.footer-hero-banner {
+    background: #142257;
+}
+
+.footer-hero-banner h2 {
+    font-size: 64px;
+    font-weight: 800;
+    line-height: 76px;
+    max-width: 662px;
+}
+
+.footer-sec-banner {
+    text-align: center;
+}
+
+.service-our{
+    width: 100% !important;
+    max-width: 100%  ;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+@media only screen and (max-device-width: 1000px) {
+    .social-sec a {
+        justify-content: center;
+    }
+
+    .social-media {
+        justify-content: center;
+    }
+
+    .footer-sec-banner h2 {
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 32px;
+        text-align: center;
+    }
+}
